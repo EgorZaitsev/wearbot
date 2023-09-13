@@ -1,15 +1,12 @@
 import React, {useEffect} from 'react';
-import {useTelegram} from "../../hooks/useTelegram";
 import {BackButton} from "@twa.js/sdk";
 import {useNavigate} from "react-router-dom";
 
 const Profile = () => {
     const backbutton = new BackButton('6.8')
-    const tg = useTelegram()
     const navigation = useNavigate()
     useEffect(() => {
         backbutton.show()
-        tg.BackButton.onClick(backNav)
         backbutton.on('click',backNav)
     })
 
@@ -21,7 +18,7 @@ const Profile = () => {
         <div>
             <h2>profile info</h2>
             <button onClick={backNav}>aboba</button>
-            <p>{tg.initDataUnsafe?.user}</p>
+            <p>{backbutton.supports('on')}</p>
         </div>
     );
 };
