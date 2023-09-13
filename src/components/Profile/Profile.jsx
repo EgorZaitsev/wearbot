@@ -9,7 +9,7 @@ const Profile = () => {
     const navigation = useNavigate()
     useEffect(() => {
         backbutton.show()
-        tg.WebView.receiveEvent('back_button_pressed',backNav)
+        tg.BackButton.onClick(backNav)
         backbutton.on('click',backNav)
     })
 
