@@ -7,12 +7,11 @@ import React from 'react';
 
 
 const App = () => {
-
     return (
         <>
             <Routes>
                 <Route path='/' element={<Header />} />
-                <Route path='/profile' element={<Profile />} />
+                <Route path='/profile' element={<Profile  />} />
             </Routes>
         </>
     );
