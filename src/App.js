@@ -3,9 +3,14 @@ import Header from'./components/Header'
 import "./components/Header.css"
 import React from 'react';
 
+const tg = window.Telegram.WebApp
+
 const App = () => {
   return (
-      <Header />
+      <>
+        <p>{tg.initData}</p>
+        <Header />
+      </>
   );
 };
 
