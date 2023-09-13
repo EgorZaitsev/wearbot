@@ -8,11 +8,11 @@ import {useTelegram} from "./hooks/useTelegram";
 
 const App = () => {
 
-    const tg = useTelegram();
+    const tg = useTelegram()
 
-    tg.backButton.show()
     return (
         <>
+            <p>{tg.initDataUnsafe?.user}</p>
             <Routes>
                 <Route path='/' element={<Header />} />
                 <Route path='/profile' element={<Profile  />} />
