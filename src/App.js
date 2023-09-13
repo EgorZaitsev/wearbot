@@ -2,8 +2,7 @@ import './App.css';
 import Header from'./components/Header'
 import Profile from "./components/Profile/Profile";
 import "./components/Header.css"
-import {useTelegram} from "./hooks/useTelegram";
-import {Link, Route, Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import React from 'react';
 
 
