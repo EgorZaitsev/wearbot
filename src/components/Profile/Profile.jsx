@@ -1,10 +1,12 @@
 import React from 'react';
+import {useTelegram} from "../../hooks/useTelegram";
 
 const Profile = () => {
+    const tg = useTelegram();
 
     return (
         <div>
-            <p>help</p>
+            <p>{tg.initDataUnsafe.user}</p>
         </div>
     );
 };
