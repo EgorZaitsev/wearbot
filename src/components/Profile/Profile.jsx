@@ -1,15 +1,10 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {useNavigate} from "react-router-dom";
-import {useTelegram} from "../../hooks/useTelegram";
 
 const Profile = () => {
-    const tg = useTelegram();
     const navigation = useNavigate()
-    const backbutton = tg.backButton;
+    window.Telegram.WebApp.BackButton.show();
 
-    useEffect(() => {
-        backbutton.show();
-    })
 
     const backNav = () => {
         navigation(-1);
