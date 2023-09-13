@@ -1,14 +1,14 @@
 import React from 'react';
 import {useNavigate} from "react-router-dom";
 
+
 const Profile = () => {
     const navigation = useNavigate()
-    window.Telegram.WebApp.BackButton.show();
-
-
     const backNav = () => {
         navigation(-1);
     }
+    window.Telegram.WebApp.BackButton.show();
+    window.Telegram.WebApp.BackButton.onClick(backNav);
 
     return (
         <div>
