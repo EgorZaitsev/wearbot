@@ -14,9 +14,14 @@ const Profile = () => {
         })
     })
 
+    const backNav = () => {
+        navigation(-1);
+    }
+
     return (
         <div>
             <h2>profile info</h2>
+            <button onClick={backNav}>aboba</button>
             <p>{tg.initDataUnsafe?.user}</p>
         </div>
     );
