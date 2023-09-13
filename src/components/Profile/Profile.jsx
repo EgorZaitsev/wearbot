@@ -9,7 +9,7 @@ const Profile = () => {
     const navigation = useNavigate()
     useEffect(() => {
         backbutton.show()
-        backbutton.on('click', () => {
+        backbutton.on('back_button_pressed', () => {
             navigation(-1);
         })
     })
