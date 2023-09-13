@@ -19,7 +19,6 @@ const App = () => {
             <p>{tg.initData}</p>
             <Header/>
             <Routes>
-                <Route index element={<App />} />
                 <Route path={'profile'} element={ <Profile />} />
             </Routes>
         </>
