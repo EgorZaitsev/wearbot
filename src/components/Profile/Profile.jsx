@@ -6,12 +6,12 @@ import {useBackButton} from "@twa.js/sdk-react";
 const Profile = () => {
     const tg = useTelegram();
     const navigation = useNavigate();
-    const backbutton = useBackButton()
+    const backButton = useBackButton()
 
     useEffect(() => {
 
-            backbutton.show();
-            backbutton.on('click', () => {
+            backButton.show();
+            backButton.on('click', () => {
                 navigation(-1);
             })
         })
