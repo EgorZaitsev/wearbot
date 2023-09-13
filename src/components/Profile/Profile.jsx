@@ -9,14 +9,14 @@ const Profile = () => {
     const backNav = () => {
         navigation(-1);
         tg.BackButton.hide();
+        tg.BackButton.offClick();
     }
     tg.BackButton.show();
     tg.BackButton.onClick(backNav);
     return (
         <div>
             <h2>profile info</h2>
-            <button onClick={backNav}>aboba</button>
-            <p>help me</p>
+            <p>{tg.initDataUnsafe.user}</p>
         </div>
     );
 };
