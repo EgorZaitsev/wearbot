@@ -3,13 +3,14 @@ import {useTelegram} from "../../hooks/useTelegram";
 import {useNavigate} from "react-router-dom";
 
 const Profile = () => {
-
     const tg = useTelegram();
+    const backbutton = new tg.BackButton();
     const navigation = useNavigate();
     useEffect(() => {
         if(!tg.BackButton.isVisible) {
-            tg.BackButton.show();
-            tg.BackButton.onClick(() => {
+
+            backbutton.show();
+            backbutton.onClick(() => {
                 navigation(-1);
             })
         }
