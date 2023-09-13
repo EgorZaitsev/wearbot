@@ -7,7 +7,7 @@ const Profile = () => {
     return (
 
         <div>
-            {tg.initDataUnsafe.user.first_name}
+            {tg.initDataUnsafe?.user}
         </div>
     );
 };
