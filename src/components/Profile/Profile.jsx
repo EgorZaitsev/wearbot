@@ -9,7 +9,7 @@ const Profile = () => {
     }
     window.Telegram.WebApp.BackButton.show();
     window.Telegram.WebApp.BackButton.onClick(backNav);
-
+    window.Telegram.WebApp.BackButton.hide();
     return (
         <div>
             <h2>profile info</h2>
