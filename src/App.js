@@ -4,9 +4,13 @@ import Profile from "./components/Profile/Profile";
 import "./components/Header.css"
 import {Route, Routes} from "react-router-dom";
 import React from 'react';
-
+import {useTelegram} from "./hooks/useTelegram";
 
 const App = () => {
+
+    const tg = useTelegram();
+
+    tg.backButton.show()
     return (
         <>
             <Routes>
