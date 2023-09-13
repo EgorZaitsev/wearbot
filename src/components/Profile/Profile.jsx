@@ -1,15 +1,17 @@
 import React from 'react';
 import {useNavigate} from "react-router-dom";
+import {useTelegram} from "../../hooks/useTelegram";
 
 
 const Profile = () => {
+    const {tg} = useTelegram()
     const navigation = useNavigate()
     const backNav = () => {
         navigation(-1);
-        window.Telegram.WebApp.BackButton.hide();
+        tg.BackButton.hide();
     }
-    window.Telegram.WebApp.BackButton.show();
-    window.Telegram.WebApp.BackButton.onClick(backNav);
+    tg.BackButton.show();
+    tg.BackButton.onClick(backNav);
     return (
         <div>
             <h2>profile info</h2>
