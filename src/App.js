@@ -18,9 +18,9 @@ const App = () => {
         <>
             <p>{tg.initData}</p>
             <Header/>
-            <Link to='/profile'>Профиль</Link>
+            <Link to='/profiles'>Профиль</Link>
             <Routes>
-                <Route path='/profile' element={<Profile />} />
+                <Route path='/profiles' element={<Profile />} />
             </Routes>
         </>
     );

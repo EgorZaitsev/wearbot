@@ -5,7 +5,6 @@ const Profile = () => {
     const tg = useTelegram()
 
     return (
-
         <div>
             {tg.initDataUnsafe?.user}
         </div>
