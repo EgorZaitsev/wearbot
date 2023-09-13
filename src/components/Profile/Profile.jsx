@@ -1,12 +1,13 @@
 import React, {useEffect} from 'react';
 import {useTelegram} from "../../hooks/useTelegram";
-
+import {BackButton} from "@twa.js/sdk";
 
 const Profile = () => {
+    const backbutton = new BackButton('6.8')
  const tg = useTelegram()
     useEffect(() => {
 
-        tg.backButton.show();
+        backbutton.show()
     })
 
     return (
