@@ -6,10 +6,10 @@ const Profile = () => {
     const navigation = useNavigate()
     const backNav = () => {
         navigation(-1);
+        window.Telegram.WebApp.BackButton.hide();
     }
     window.Telegram.WebApp.BackButton.show();
     window.Telegram.WebApp.BackButton.onClick(backNav);
-    window.Telegram.WebApp.BackButton.hide();
     return (
         <div>
             <h2>profile info</h2>
